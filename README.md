@@ -27,7 +27,7 @@ A collection of 10 structured case studies demonstrating how AI agents can assis
 
 ```
 .
-├── prompt-1.md ~ prompt-10.md      # 各案例的提示词 / Prompts for each case
+├── prompt-1.md ~ prompt-5.md       # 案例 1-5 的提示词 / Prompts for cases 1-5
 ├── CasePrompt.md                    # 提示词汇总 / All prompts in one file
 ├── case1/                           # 案例 1：初版理论模型
 │   ├── documents/
@@ -49,16 +49,32 @@ A collection of 10 structured case studies demonstrating how AI agents can assis
 │   └── data/
 │       ├── company_list.csv
 │       └── financial_panel.csv
-└── case4/                           # 案例 4：ESG 面板构建
-    ├── documents/
-    │   ├── codebook.md
-    │   └── evidence_log.md
-    ├── scripts/
-    │   └── esg_analysis.py
-    └── data/
-        ├── esg_panel.csv
-        ├── evidence_log.csv
-        └── pdf_cache/              # 年报 PDF 样本 / Sample annual reports
+├── case4/                           # 案例 4：ESG 面板构建
+│   ├── documents/
+│   │   ├── codebook.md
+│   │   └── evidence_log.md
+│   ├── scripts/
+│   │   └── esg_analysis.py
+│   └── data/
+│       ├── esg_panel.csv
+│       ├── evidence_log.csv
+│       └── pdf_cache/              # 年报 PDF 样本 / Sample annual reports
+├── case5/                           # 案例 5：裁判文书数据库（待实现）
+├── case6/                           # 案例 6：回归分析（待实现）
+│   └── documents/
+│       └── prompt-6.md
+├── case7/                           # 案例 7：DSGE 模型（待实现）
+│   └── documents/
+│       └── prompt-7.md
+├── case8/                           # 案例 8：论文写作（待实现）
+│   └── documents/
+│       └── prompt-8.md
+├── case9/                           # 案例 9：修稿与回复（待实现）
+│   └── documents/
+│       └── prompt-9.md
+└── case10/                          # 案例 10：写作全流程（待实现）
+    └── documents/
+        └── prompt-10.md
 ```
 
 Each case directory follows a consistent structure:
@@ -68,11 +84,11 @@ Each case directory follows a consistent structure:
 
 ## How to Use / 使用方法
 
-1. **选择案例**：进入对应目录（如 `case3/`），或在任意目录使用对应的 `prompt-N.md`。
+1. **选择案例**：进入对应目录（如 `case3/`），找到 `documents/` 中的提示词。
 2. **运行 AI Agent**：将提示词输入 AI agent（如 Claude Code），即可开始实验。
-3. **查看产出**：每个案例目录包含 agent 生成的代码、数据和文档。
+3. **查看产出**：每个案例目录包含 agent 生成的代码（`scripts/`）、数据（`data/`）和文档（`documents/`）。
 
-Each `prompt-N.md` is self-contained — copy the prompt into any AI agent to reproduce the workflow.
+Each case's prompt is self-contained — copy it into any AI agent to reproduce the workflow.
 
 ## Research Theme / 研究主题
 
