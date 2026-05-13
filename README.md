@@ -21,7 +21,7 @@
 
 | 内容                 | 链接                                                      |
 | -------------------- | --------------------------------------------------------- |
-| 项目简介             | [BV1VLoCBHE4A](https://www.bilibili.com/video/BV1VLoCBHE4A/) |
+| 智能体简介           | [BV1VLoCBHE4A](https://www.bilibili.com/video/BV1VLoCBHE4A/) |
 | 安装配置             | [BV11aoCBzEqJ](https://www.bilibili.com/video/BV11aoCBzEqJ/) |
 | 案例 1：初版理论模型 | [BV11aoCBzECc](https://www.bilibili.com/video/BV11aoCBzECc)  |
 | 案例 2：理论拓展     | [BV1yz9SB7E9Z](https://www.bilibili.com/video/BV1yz9SB7E9Z/) |
@@ -46,7 +46,6 @@
   - [案例 9：修稿与回复](#案例-9修稿与回复)
   - [案例 10：写作全流程](#案例-10写作全流程)
 - [项目结构](#项目结构)
-- [引用](#引用)
 
 ---
 
@@ -252,22 +251,6 @@
 - `scripts/` — Python 代码
 - `documents/` — 说明文档
 - `data/` — 数据文件
-
----
-
-## 引用
-
-如果本项目对您的研究有帮助，请引用：
-
-```bibtex
-@software{wang2024ai_agent_ssr,
-  title   = {AI Agent for Social Science Research},
-  author  = {Wang, Bin and Wang, Yutao},
-  year    = {2024},
-  url     = {https://github.com/YutaoWang03/ai-agent-social-science},
-  institution = {Jinan University, School of Economics}
-}
-```
 
 ---
 

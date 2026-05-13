@@ -48,7 +48,6 @@ Copyright 2024 School of Economics, Jinan University. Bin Wang, Yutao Wang. All 
   - [Case 9: Revision & Referee Response](#case-9-revision--referee-response)
   - [Case 10: Full Writing Workflow](#case-10-full-writing-workflow)
 - [Project Structure](#project-structure)
-- [Citation](#citation)
 
 ---
 
@@ -253,22 +252,6 @@ Each case follows a consistent structure:
 - `scripts/` — Python code
 - `documents/` — Documentation
 - `data/` — Data files
-
----
-
-## Citation
-
-If this project helps your research, please cite:
-
-```bibtex
-@software{wang2024ai_agent_ssr,
-  title   = {AI Agent for Social Science Research},
-  author  = {Wang, Bin and Wang, Yutao},
-  year    = {2024},
-  url     = {https://github.com/<username>/ai-agent-social-science},
-  institution = {Jinan University, School of Economics}
-}
-```
 
 ---
 
