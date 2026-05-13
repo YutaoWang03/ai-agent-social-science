@@ -19,6 +19,9 @@ env/
 *.swp
 *.swo
 
+# Output
+video_out/
+
 # Secrets & credentials
 .env
 .env.*
