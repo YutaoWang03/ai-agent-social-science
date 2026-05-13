@@ -27,22 +27,24 @@ A collection of 10 structured case studies demonstrating how AI agents can assis
 
 ```
 .
-├── prompt-1.md ~ prompt-5.md       # 案例 1-5 的提示词 / Prompts for cases 1-5
 ├── CasePrompt.md                    # 提示词汇总 / All prompts in one file
 ├── case1/                           # 案例 1：初版理论模型
 │   ├── documents/
+│   │   ├── prompt-1.md
 │   │   ├── model_setup.md
 │   │   └── model_setup.lyx
 │   ├── scripts/
 │   └── data/
 ├── case2/                           # 案例 2：理论拓展
 │   ├── documents/
+│   │   ├── prompt-2.md
 │   │   ├── extension_notes.md
 │   │   └── extension.lyx
 │   ├── scripts/
 │   └── data/
 ├── case3/                           # 案例 3：财务数据下载
 │   ├── documents/
+│   │   ├── prompt-3.md
 │   │   └── variable_notes.md
 │   ├── scripts/
 │   │   └── financial_data_download.py
@@ -51,6 +53,7 @@ A collection of 10 structured case studies demonstrating how AI agents can assis
 │       └── financial_panel.csv
 ├── case4/                           # 案例 4：ESG 面板构建
 │   ├── documents/
+│   │   ├── prompt-4.md
 │   │   ├── codebook.md
 │   │   └── evidence_log.md
 │   ├── scripts/
@@ -60,6 +63,8 @@ A collection of 10 structured case studies demonstrating how AI agents can assis
 │       ├── evidence_log.csv
 │       └── pdf_cache/              # 年报 PDF 样本 / Sample annual reports
 ├── case5/                           # 案例 5：裁判文书数据库（待实现）
+│   └── documents/
+│       └── prompt-5.md
 ├── case6/                           # 案例 6：回归分析（待实现）
 │   └── documents/
 │       └── prompt-6.md
