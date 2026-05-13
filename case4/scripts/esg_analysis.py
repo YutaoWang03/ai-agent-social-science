@@ -84,13 +84,6 @@ def fetch_annual_report_urls(stock_code: str, start_year: int, end_year: int) ->
     import requests
 
     url = 'http://www.cninfo.com.cn/new/hisAnnouncement/query'
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Accept': 'application/json',
-        'Origin': 'http://www.cninfo.com.cn',
-        'Referer': 'http://www.cninfo.com.cn/new/commonUrl?url=disclosure/list/notice'
-    }
 
     # 判断交易所
     if stock_code.startswith(('6', '9')):
@@ -119,7 +112,7 @@ def fetch_annual_report_urls(stock_code: str, start_year: int, end_year: int) ->
         }
 
         try:
-            response = requests.post(url, headers=headers, data=data, timeout=15)
+            response = requests.post(url, data=data, timeout=15)
             result = response.json()
             announcements = result.get('announcements', [])
 

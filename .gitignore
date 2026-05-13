@@ -18,3 +18,11 @@ env/
 .idea/
 *.swp
 *.swo
+
+# Secrets & credentials
+.env
+.env.*
+credentials.json
+secrets.*
+*.pem
+*.key
