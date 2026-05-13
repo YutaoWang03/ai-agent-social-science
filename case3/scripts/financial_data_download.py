@@ -22,7 +22,8 @@ warnings.filterwarnings("ignore")
 # ============================================================
 # 配置参数
 # ============================================================
-OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "..", "data")
 COMPANY_LIST_FILE = os.path.join(OUTPUT_DIR, "company_list.csv")
 PANEL_FILE = os.path.join(OUTPUT_DIR, "financial_panel.csv")
 START_YEAR = 2010

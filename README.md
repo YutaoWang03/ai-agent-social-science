@@ -27,26 +27,44 @@ A collection of 10 structured case studies demonstrating how AI agents can assis
 
 ```
 .
-├── prompt-1.md ~ prompt-10.md   # 各案例的提示词 / Prompts for each case
-├── CasePrompt.md                 # 提示词汇总 / All prompts in one file
-├── case1/                        # 案例 1 产出：理论模型
-│   ├── model_setup.md
-│   └── model_setup.lyx
-├── case2/                        # 案例 2 产出：理论拓展
-│   ├── extension_notes.md
-│   └── extension.lyx
-├── case3/                        # 案例 3 产出：财务数据
-│   ├── company_list.csv
-│   ├── financial_data_download.py
-│   ├── financial_panel.csv
-│   └── variable_notes.md
-└── case4/                        # 案例 4 产出：ESG 面板
-    ├── esg_panel.csv
-    ├── esg_analysis.py
-    ├── codebook.md
-    ├── evidence_log.md
-    └── pdf_cache/                # 年报 PDF 样本 / Sample annual reports
+├── prompt-1.md ~ prompt-10.md      # 各案例的提示词 / Prompts for each case
+├── CasePrompt.md                    # 提示词汇总 / All prompts in one file
+├── case1/                           # 案例 1：初版理论模型
+│   ├── documents/
+│   │   ├── model_setup.md
+│   │   └── model_setup.lyx
+│   ├── scripts/
+│   └── data/
+├── case2/                           # 案例 2：理论拓展
+│   ├── documents/
+│   │   ├── extension_notes.md
+│   │   └── extension.lyx
+│   ├── scripts/
+│   └── data/
+├── case3/                           # 案例 3：财务数据下载
+│   ├── documents/
+│   │   └── variable_notes.md
+│   ├── scripts/
+│   │   └── financial_data_download.py
+│   └── data/
+│       ├── company_list.csv
+│       └── financial_panel.csv
+└── case4/                           # 案例 4：ESG 面板构建
+    ├── documents/
+    │   ├── codebook.md
+    │   └── evidence_log.md
+    ├── scripts/
+    │   └── esg_analysis.py
+    └── data/
+        ├── esg_panel.csv
+        ├── evidence_log.csv
+        └── pdf_cache/              # 年报 PDF 样本 / Sample annual reports
 ```
+
+Each case directory follows a consistent structure:
+- `scripts/` — Python 代码 / Python scripts
+- `documents/` — 说明文档 / Documentation and notes
+- `data/` — 数据文件 / Data files and outputs
 
 ## How to Use / 使用方法
 

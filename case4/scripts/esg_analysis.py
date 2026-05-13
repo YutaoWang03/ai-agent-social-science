@@ -25,11 +25,12 @@ warnings.filterwarnings("ignore")
 # ============================================================
 # 配置参数
 # ============================================================
-OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
-COMPANY_LIST_FILE = os.path.join(OUTPUT_DIR, "..", "case3", "company_list.csv")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "..", "data")
+COMPANY_LIST_FILE = os.path.join(SCRIPT_DIR, "..", "..", "case3", "data", "company_list.csv")
 ESG_PANEL_FILE = os.path.join(OUTPUT_DIR, "esg_panel.csv")
 EVIDENCE_LOG_FILE = os.path.join(OUTPUT_DIR, "evidence_log.md")
-CODEBOOK_FILE = os.path.join(OUTPUT_DIR, "codebook.md")
+CODEBOOK_FILE = os.path.join(SCRIPT_DIR, "..", "documents", "codebook.md")
 PDF_CACHE_DIR = os.path.join(OUTPUT_DIR, "pdf_cache")
 
 START_YEAR = 2023
