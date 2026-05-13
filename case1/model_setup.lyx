@@ -1,0 +1,915 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children no
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\bookmarksnumbered false
+\bookmarksopen false
+\bookmarksopenlevel 1
+\break_links false
+\colorlinks true
+\urlcolor blue
+\linkcolor red
+\citecolor green
+\filecolor cyan
+\pdfpagemode FullScreen
+\use_geometry true
+\geometry left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm
+\use_package amsmath
+\use_package amssymb
+\use_package cancel
+\use_package esint
+\use_package mathdots
+\use_package mathtools
+\use_package mhchem
+\use_package stackrel
+\use_package stmaryrd
+\use_package undertilde
+\cite_engine basic
+\cite_engine_type 0
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #000000
+\end_branch
+\selected_index 0
+\end_indices
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_buttons_relaxed 0
+\temp_dir /tmp
+\lyxrcdir /home/user/.lyx
+\lyxsearchdir /home/user/.lyx
+\include_command \input
+\result_margin 0
+\html_font_size 12
+\end_header
+
+\begin_body
+
+\begin_layout Title
+ESG 与企业盈利能力：初版理论模型
+\end_layout
+
+\begin_layout Author
+Theoretical Framework
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\series bold
+模型类型：
+\series default
+连续时间动态最优化（最优控制）
+
+\end_layout
+
+\begin_layout Section
+模型设定
+\end_layout
+
+\begin_layout Subsection
+参与者与时序
+\end_layout
+
+\begin_layout Standard
+我们考虑一个代表性企业在连续时间
+\begin_inset Formula $t\in[0,\infty)$
+\end_inset
+
+下做出决策。企业选择 ESG 投入水平和生产投入水平以最大化贴现利润流。
+\end_layout
+
+\begin_layout Subsection
+状态变量与控制变量
+\end_layout
+
+\begin_layout Standard
+\series bold
+状态变量：
+\series default
+
+\begin_inset Formula $S_{t}$
+\end_inset
+
+——ESG 资本存量（声誉、社会信任、环境合规积累等），初始值
+\begin_inset Formula $S_{0}>0$
+\end_inset
+
+给定。
+\end_layout
+
+\begin_layout Standard
+\series bold
+控制变量：
+\series default
+
+\begin_inset Formula $x_{t}\geq0$
+\end_inset
+
+——ESG 投入（环保支出、社会责任项目、治理改善等）；
+
+\begin_inset Formula $e_{t}\geq0$
+\end_inset
+
+——生产性投入。
+\end_layout
+
+\begin_layout Subsection
+ESG 资本动态方程
+\end_layout
+
+\begin_layout Standard
+ESG 资本的运动方程为：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\dot{S}_{t}=x_{t}-\delta S_{t}\label{eq:ESG-dynamics}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset Formula $\delta\in(0,1)$
+\end_inset
+
+为 ESG 资本折旧率，反映声誉磨损和合规标准提高等因素。
+\end_layout
+
+\begin_layout Section
+企业最优化问题
+\end_layout
+
+\begin_layout Subsection
+利润函数
+\end_layout
+
+\begin_layout Standard
+企业的瞬时利润函数为：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\pi(e_{t},S_{t},x_{t})=R(e_{t},S_{t})-C(e_{t},S_{t})-x_{t}\label{eq:profit}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+其中：
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Formula $R(e_{t},S_{t})$
+\end_inset
+
+——收入函数，随生产投入
+\begin_inset Formula $e_{t}$
+\end_inset
+
+和 ESG 资本
+\begin_inset Formula $S_{t}$
+\end_inset
+
+递增，即
+\begin_inset Formula $\frac{\partial R}{\partial e}>0$
+\end_inset
+
+且
+\begin_inset Formula $\frac{\partial R}{\partial S}>0$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Formula $C(e_{t},S_{t})$
+\end_inset
+
+——成本函数，随生产投入递增，随 ESG 资本递减，即
+\begin_inset Formula $\frac{\partial C}{\partial e}>0$
+\end_inset
+
+且
+\begin_inset Formula $\frac{\partial C}{\partial S}<0$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Formula $x_{t}$
+\end_inset
+
+——ESG 投入的直接成本。
+\end_layout
+
+\begin_layout Subsection
+ESG 进入利润函数的三个渠道
+\end_layout
+
+\begin_layout Enumerate
+\series bold
+需求侧：
+\series default
+ ESG 提升企业声誉，消费者愿意支付更高价格，
+\begin_inset Formula $\frac{\partial R}{\partial S}>0$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Enumerate
+\series bold
+成本侧：
+\series default
+ ESG 降低合规风险和诉讼风险，
+\begin_inset Formula $\frac{\partial C}{\partial S}<0$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Enumerate
+\series bold
+融资侧：
+\series default
+ ESG 降低融资成本（可通过折现率
+\begin_inset Formula $r(S)$
+\end_inset
+
+体现，
+\begin_inset Formula $\frac{\partial r}{\partial S}<0$
+\end_inset
+
+），最小模型中暂不显式建模。
+\end_layout
+
+\begin_layout Subsection
+目标函数
+\end_layout
+
+\begin_layout Standard
+企业最大化贴现利润流：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\max_{\{x_{t},e_{t}\}_{t=0}^{\infty}}\int_{0}^{\infty}e^{-rt}\left[R(e_{t},S_{t})-C(e_{t},S_{t})-x_{t}\right]dt\label{eq:objective}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+受约束于动态方程 (
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ESG-dynamics"
+"yes"
+
+\end_inset
+
+)，
+\begin_inset Formula $S_{0}$
+\end_inset
+
+给定，
+\begin_inset Formula $x_{t}\geq0$
+\end_inset
+
+，
+\begin_inset Formula $e_{t}\geq0$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsection
+参数化函数形式
+\end_layout
+
+\begin_layout Standard
+为推导闭式解，采用以下参数化形式。
+\end_layout
+
+\begin_layout Standard
+\series bold
+收入函数（Cobb-Douglas 形式）：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+R(e_{t},S_{t})=A\cdot e_{t}^{\alpha}\cdot(1+S_{t})^{\beta}\label{eq:revenue}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset Formula $A>0$
+\end_inset
+
+为全要素生产率，
+\begin_inset Formula $\alpha\in(0,1)$
+\end_inset
+
+为生产投入的产出弹性，
+\begin_inset Formula $\beta>0$
+\end_inset
+
+为 ESG 对收入的边际效应。
+\end_layout
+
+\begin_layout Standard
+\series bold
+成本函数：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+C(e_{t},S_{t})=c\cdot e_{t}^{\gamma}\cdot(1+S_{t})^{-\eta}\label{eq:cost}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset Formula $c>0$
+\end_inset
+
+，
+\begin_inset Formula $\gamma>1$
+\end_inset
+
+（凸成本），
+\begin_inset Formula $\eta>0$
+\end_inset
+
+表示 ESG 对成本的降低效应。
+\end_layout
+
+\begin_layout Subsection
+Hamilton 函数与最优条件
+\end_layout
+
+\begin_layout Standard
+\series bold
+Hamiltonian：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\mathcal{H}=R(e_{t},S_{t})-C(e_{t},S_{t})-x_{t}+\lambda_{t}(x_{t}-\delta S_{t})\label{eq:Hamiltonian}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset Formula $\lambda_{t}$
+\end_inset
+
+为 ESG 资本的协态变量（costate variable），代表 ESG 资本的影子价格。
+\end_layout
+
+\begin_layout Standard
+\series bold
+一阶条件：
+\series default
+
+\end_layout
+
+\begin_layout Enumerate
+对
+\begin_inset Formula $x_{t}$
+\end_inset
+
+：
+\begin_inset Formula $\frac{\partial\mathcal{H}}{\partial x_{t}}=-1+\lambda_{t}=0\implies\lambda_{t}=1$
+\end_inset
+
+。
+\emph on
+ 经济含义：
+\emph default
+ ESG 投入的边际成本为 1（直接支出），边际收益为 ESG 资本的影子价格。最优时
+\begin_inset Formula $\lambda_{t}=1$
+\end_inset
+
+，意味着每单位 ESG 投入恰好创造 1 单位的资本价值。
+\end_layout
+
+\begin_layout Enumerate
+对
+\begin_inset Formula $e_{t}$
+\end_inset
+
+：
+\begin_inset Formula $\frac{\partial\mathcal{H}}{\partial e_{t}}=\frac{\partial R}{\partial e_{t}}-\frac{\partial C}{\partial e_{t}}=0$
+\end_inset
+
+。
+\emph on
+ 经济含义：
+\emph default
+ 生产投入的边际收入等于边际成本。
+\end_layout
+
+\begin_layout Enumerate
+\series bold
+协态方程（Euler 方程）：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\dot{\lambda}_{t}=r\lambda_{t}-\frac{\partial\mathcal{H}}{\partial S_{t}}=r-\frac{\partial R}{\partial S_{t}}+\frac{\partial C}{\partial S_{t}}+\lambda_{t}\delta\label{eq:Euler}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+在稳态（
+\begin_inset Formula $\dot{\lambda}=0$
+\end_inset
+
+，
+\begin_inset Formula $\dot{S}=0$
+\end_inset
+
+）时，利用
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+r=\frac{\partial R}{\partial S}-\frac{\partial C}{\partial S}-\delta\label{eq:steady-state}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\emph on
+ 经济含义：
+\emph default
+ 稳态时，ESG 资本的边际回报（收入增量 + 成本节约 − 折旧）等于贴现率。这给出了 ESG 的最优投资条件。
+\end_layout
+
+\begin_layout Section
+ESG 影响盈利能力的机制分析
+\end_layout
+
+\begin_layout Subsection
+机制 1：声誉机制（消费者支付意愿）
+\end_layout
+
+\begin_layout Standard
+\series bold
+传导路径：
+\series default
+ ESG 投入 → 品牌声誉 ↑ → 消费者支付意愿 ↑ → 收入 ↑。
+\end_layout
+
+\begin_layout Standard
+\series bold
+数学体现：
+\series default
+
+\begin_inset Formula $\frac{\partial R}{\partial S}>0$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsection
+机制 2：风险缓解机制
+\end_layout
+
+\begin_layout Standard
+\series bold
+传导路径：
+\series default
+ ESG 投入 → 合规风险 ↓ → 罚款/诉讼损失 ↓ → 成本 ↓。
+\end_layout
+
+\begin_layout Standard
+\series bold
+数学体现：
+\series default
+
+\begin_inset Formula $\frac{\partial C}{\partial S}<0$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsection
+机制 3：人才吸引机制
+\end_layout
+
+\begin_layout Standard
+\series bold
+传导路径：
+\series default
+ ESG 投入 → 企业吸引力 ↑ → 劳动生产率 ↑ → 收入 ↑ 或成本 ↓。
+\end_layout
+
+\begin_layout Standard
+\series bold
+数学体现：
+\series default
+ 嵌入
+\begin_inset Formula $R$
+\end_inset
+
+或
+\begin_inset Formula $C$
+\end_inset
+
+中（提高效率参数
+\begin_inset Formula $A$
+\end_inset
+
+或降低
+\begin_inset Formula $c$
+\end_inset
+
+）。
+\end_layout
+
+\begin_layout Subsection
+机制 4：资本获取机制
+\end_layout
+
+\begin_layout Standard
+\series bold
+传导路径：
+\series default
+ ESG 投入 → 投资者偏好 ↑ → 融资成本 ↓。
+\end_layout
+
+\begin_layout Standard
+\series bold
+数学体现：
+\series default
+
+\begin_inset Formula $\frac{\partial r}{\partial S}<0$
+\end_inset
+
+（扩展模型中）。
+\end_layout
+
+\begin_layout Section
+可检验命题
+\end_layout
+
+\begin_layout Subsection
+命题 1：ESG 与 ROA 的倒 U 型关系
+\end_layout
+
+\begin_layout Standard
+\series bold
+命题陈述：
+\series default
+ 在其他条件不变的情况下，ESG 投入与资产回报率（ROA）之间存在倒 U 型关系。初始阶段 ESG 投入提升 ROA，但超过某个阈值后，边际收益递减导致 ROA 下降。
+\end_layout
+
+\begin_layout Standard
+\series bold
+推导逻辑：
+\series default
+ 由利润函数的凹性条件，
+\begin_inset Formula $\frac{\partial^{2}\pi}{\partial S^{2}}=\frac{\partial^{2}R}{\partial S^{2}}-\frac{\partial^{2}C}{\partial S^{2}}$
+\end_inset
+
+。当
+\begin_inset Formula $\frac{\partial^{2}R}{\partial S^{2}}<0$
+\end_inset
+
+（声誉边际收益递减）且
+\begin_inset Formula $\frac{\partial^{2}C}{\partial S^{2}}>0$
+\end_inset
+
+（成本节约边际递减）时，存在最优 ESG 水平
+\begin_inset Formula $S^{*}$
+\end_inset
+
+，超过后利润下降。
+\end_layout
+
+\begin_layout Standard
+\series bold
+实证检验：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+ROA_{it}=\alpha+\beta_{1}ESG_{it}+\beta_{2}ESG_{it}^{2}+\gamma X_{it}+\epsilon_{it}\label{eq:test1}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+预期：
+\begin_inset Formula $\beta_{1}>0$
+\end_inset
+
+，
+\begin_inset Formula $\beta_{2}<0$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsection
+命题 2：融资约束放大 ESG 的正向效应
+\end_layout
+
+\begin_layout Standard
+\series bold
+命题陈述：
+\series default
+ 对于融资约束更强的企业，ESG 投入对盈利能力的正向效应更大。
+\end_layout
+
+\begin_layout Standard
+\series bold
+推导逻辑：
+\series default
+ 在扩展模型中引入融资约束
+\begin_inset Formula $\bar{B}(S_{t})$
+\end_inset
+
+（可借贷额度随 ESG 增加），ESG 通过降低融资成本，对高融资约束企业边际价值更高。
+\end_layout
+
+\begin_layout Standard
+\series bold
+实证检验：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+ROA_{it}=\alpha+\beta_{1}ESG_{it}+\beta_{2}ESG_{it}\times Constraint_{it}+\gamma X_{it}+\epsilon_{it}\label{eq:test2}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+预期：
+\begin_inset Formula $\beta_{2}>0$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsection
+命题 3：ESG 的长期效应大于短期效应
+\end_layout
+
+\begin_layout Standard
+\series bold
+命题陈述：
+\series default
+ ESG 投入对企业绩效的正向效应具有时间累积性，长期效应（3–5 年）显著大于短期效应（1 年）。
+\end_layout
+
+\begin_layout Standard
+\series bold
+推导逻辑：
+\series default
+ 由 ESG 资本动态方程 (
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ESG-dynamics"
+"yes"
+
+\end_inset
+
+)，ESG 资本的积累需要时间。稳态水平
+\begin_inset Formula $S^{*}=x/\delta$
+\end_inset
+
+需要多个时期才能达到，因此短期内 ESG 的效应被低估。
+\end_layout
+
+\begin_layout Section
+额外假设及其经济含义
+\end_layout
+
+\begin_layout Description
+假设 1 [ESG 资本完全可观察]
+ 企业、消费者和投资者均可无成本地观察到真实的 ESG 资本存量。排除"漂绿"（greenwashing）行为。放松后引入信息不对称，ESG 的声誉效应将被削弱，可能出现逆向选择问题。
+\end_layout
+
+\begin_layout Description
+假设 2 [ESG 资本折旧率为常数]
+
+\begin_inset Formula $\delta$
+\end_inset
+
+为常数，不随时间或 ESG 水平变化。假设声誉磨损速度均匀。放松后引入随机折旧率（泊松跳跃过程），企业需要更强的预防性 ESG 投入。
+\end_layout
+
+\begin_layout Description
+假设 3 [生产投入和 ESG 投入可完全分离]
+
+\begin_inset Formula $e_{t}$
+\end_inset
+
+和
+\begin_inset Formula $x_{t}$
+\end_inset
+
+独立，不存在资源竞争的非线性效应。放松后引入严格预算约束
+\begin_inset Formula $e_{t}+x_{t}\leq W$
+\end_inset
+
+，ESG 投入和生产投入之间存在替代关系。
+\end_layout
+
+\begin_layout Description
+假设 4 [代表性消费者具有 ESG 偏好]
+ 所有消费者对 ESG 有正向偏好且强度相同。放松后引入消费者异质偏好，ESG 的需求效应取决于"绿色消费者"的比例。
+\end_layout
+
+\begin_layout Description
+假设 5 [完全竞争市场]
+ 企业是价格接受者。放松后在垄断竞争或寡头市场中，ESG 可能成为差异化策略的工具。
+\end_layout
+
+\begin_layout Section
+严格推导 vs 合理直觉
+\end_layout
+
+\begin_layout Subsection
+严格推导（从模型假设直接推出）
+\end_layout
+
+\begin_layout Enumerate
+ESG 的最优投资条件：
+\begin_inset Formula $r=\frac{\partial R}{\partial S}-\frac{\partial C}{\partial S}-\delta$
+\end_inset
+
+——由 Hamiltonian 协态方程在稳态下严格推出。
+\end_layout
+
+\begin_layout Enumerate
+ESG 投入与 ROA 存在倒 U 型关系（在凹收入、凸成本假设下）——由
+\begin_inset Formula $\frac{\partial^{2}\pi}{\partial S^{2}}<0$
+\end_inset
+
+的二阶条件严格推出。
+\end_layout
+
+\begin_layout Enumerate
+稳态 ESG 水平
+\begin_inset Formula $S^{*}=x^{*}/\delta$
+\end_inset
+
+——由
+\begin_inset Formula $\dot{S}=0$
+\end_inset
+
+的动态方程严格推出。
+\end_layout
+
+\begin_layout Enumerate
+ESG 的边际收益递减——由收入函数凹性假设
+\begin_inset Formula $R_{SS}<0$
+\end_inset
+
+严格推出。
+\end_layout
+
+\begin_layout Subsection
+合理直觉（未经严格证明，但经济学上合理）
+\end_layout
+
+\begin_layout Enumerate
+融资约束放大 ESG 效应——经济直觉：ESG 降低融资成本对高约束企业价值更大，但严格证明需要显式建模融资约束。
+\end_layout
+
+\begin_layout Enumerate
+ESG 的长期效应大于短期效应——动态直觉：资本积累需要时间，但具体时间路径取决于函数形式和参数。
+\end_layout
+
+\begin_layout Enumerate
+人才吸引机制提升效率——组织行为学直觉：高 ESG 企业员工更忠诚、更高效，但难以纳入标准经济学框架。
+\end_layout
+
+\begin_layout Enumerate
+ESG 存在"最优区间"——政策直觉：ESG 过高可能导致资源过度分配，但临界值的精确位置取决于参数。
+\end_layout
+
+\end_body
+\end_document

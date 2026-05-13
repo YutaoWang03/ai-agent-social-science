@@ -1,0 +1,644 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children no
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\bookmarksnumbered false
+\bookmarksopen false
+\bookmarksopenlevel 1
+\break_links false
+\colorlinks true
+\urlcolor blue
+\linkcolor red
+\citecolor green
+\filecolor cyan
+\pdfpagemode FullScreen
+\use_geometry true
+\geometry left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm
+\use_package amsmath
+\use_package amssymb
+\use_package cancel
+\use_package esint
+\use_package mathdots
+\use_package mathtools
+\use_package mhchem
+\use_package stackrel
+\use_package stmaryrd
+\use_package undertilde
+\cite_engine basic
+\cite_engine_type 0
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #000000
+\end_branch
+\selected_index 0
+\end_indices
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_buttons_relaxed 0
+\temp_dir /tmp
+\lyxrcdir /home/user/.lyx
+\lyxsearchdir /home/user/.lyx
+\include_command \input
+\result_margin 0
+\html_font_size 12
+\end_header
+
+\begin_body
+
+\begin_layout Title
+ESG、融资约束与盈利能力：理论模型拓展
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\series bold
+拓展方向：
+\series default
+在基准模型中引入融资约束中介机制
+
+\end_layout
+
+\begin_layout Section
+模型拓展：引入融资约束
+\end_layout
+
+\begin_layout Subsection
+新增变量与融资额度函数
+\end_layout
+
+\begin_layout Standard
+定义融资额度函数：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+B_{t}=B_{0}+\phi S_{t}-\kappa(1+S_{t})^{-\theta}\label{eq:financing}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+其中：
+\begin_inset Formula $B_{0}>0$
+\end_inset
+
+为基准融资额度；
+\begin_inset Formula $\phi>0$
+\end_inset
+
+为 ESG 对融资额度的直接提升效应；
+\begin_inset Formula $\kappa\geq0$
+\end_inset
+
+为融资约束强度；
+\begin_inset Formula $\theta>0$
+\end_inset
+
+为 ESG 缓解融资约束的弹性。
+\end_layout
+
+\begin_layout Standard
+融资额度对 ESG 资本的偏导数：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\frac{\partial B_{t}}{\partial S_{t}}=\phi+\kappa\theta(1+S_{t})^{-\theta-1}>0\label{eq:dBdS}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Subsection
+修改后的约束条件
+\end_layout
+
+\begin_layout Standard
+在原模型基础上新增融资约束：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+e_{t}+x_{t}\leq B_{t}(S_{t},\kappa)\label{eq:budget}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Subsection
+修改后的 Hamiltonian
+\end_layout
+
+\begin_layout Standard
+引入拉格朗日乘子
+\begin_inset Formula $\mu_{t}\geq0$
+\end_inset
+
+（融资约束的影子价格），修改后的 Hamiltonian 为：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\mathcal{H}=R(e_{t},S_{t})-C(e_{t},S_{t})-x_{t}+\lambda_{t}(x_{t}-\delta S_{t})+\mu_{t}[B_{t}(S_{t},\kappa)-e_{t}-x_{t}]\label{eq:H-modified}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Subsection
+修改后的一阶条件
+\end_layout
+
+\begin_layout Standard
+\series bold
+对
+\begin_inset Formula $x_{t}$
+\end_inset
+
+：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\frac{\partial\mathcal{H}}{\partial x_{t}}=-1+\lambda_{t}-\mu_{t}=0\implies\lambda_{t}=1+\mu_{t}\label{eq:FOC-x-modified}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\emph on
+ 经济含义：
+\emph default
+ 当融资约束紧时（
+\begin_inset Formula $\mu_{t}>0$
+\end_inset
+
+），ESG 投入的影子价格
+\begin_inset Formula $\lambda_{t}>1$
+\end_inset
+
+。ESG 投入不仅直接创造资本价值，还通过缓解融资约束产生额外收益。
+\end_layout
+
+\begin_layout Standard
+\series bold
+对
+\begin_inset Formula $e_{t}$
+\end_inset
+
+：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\frac{\partial\mathcal{H}}{\partial e_{t}}=\frac{\partial R}{\partial e_{t}}-\frac{\partial C}{\partial e_{t}}-\mu_{t}=0\implies\frac{\partial R}{\partial e_{t}}-\frac{\partial C}{\partial e_{t}}=\mu_{t}\label{eq:FOC-e-modified}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\emph on
+ 经济含义：
+\emph default
+ 当融资约束紧时，生产投入的边际收益必须等于边际成本加上融资约束的影子价格。
+\end_layout
+
+\begin_layout Standard
+\series bold
+协态方程：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\dot{\lambda}_{t}=r\lambda_{t}-\frac{\partial R}{\partial S_{t}}+\frac{\partial C}{\partial S_{t}}+\lambda_{t}\delta-\mu_{t}\frac{\partial B_{t}}{\partial S_{t}}\label{eq:costate-modified}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Subsection
+修改后的稳态条件
+\end_layout
+
+\begin_layout Standard
+在稳态（
+\begin_inset Formula $\dot{\lambda}=0$
+\end_inset
+
+，
+\begin_inset Formula $\dot{S}=0$
+\end_inset
+
+）时，利用
+\begin_inset Formula $\lambda=1+\mu$
+\end_inset
+
+：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+r(1+\mu)=\frac{\partial R}{\partial S}-\frac{\partial C}{\partial S}+(1+\mu)\delta+\mu\frac{\partial B}{\partial S}\label{eq:steady-modified}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+整理得：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\frac{\partial R}{\partial S}-\frac{\partial C}{\partial S}=(1+\mu)(r-\delta)+\mu\frac{\partial B}{\partial S}\label{eq:steady-final}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\emph on
+ 关键变化：
+\emph default
+ ESG 的边际回报现在必须补偿：(1) 资本的时间成本
+\begin_inset Formula $(1+\mu)(r-\delta)$
+\end_inset
+
+，(2) 融资额度改善带来的额外收益
+\begin_inset Formula $\mu\frac{\partial B}{\partial S}$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Section
+ESG 通过融资约束影响盈利能力的新条件
+\end_layout
+
+\begin_layout Standard
+当融资约束紧时（
+\begin_inset Formula $e_{t}+x_{t}=B_{t}$
+\end_inset
+
+），ESG 投入的边际净收益为：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\frac{\partial\pi}{\partial x_{t}}=\frac{1}{\delta}\left(\frac{\partial R}{\partial S}-\frac{\partial C}{\partial S}+\mu\frac{\partial B}{\partial S}\right)-1\label{eq:ESG-marginal}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\series bold
+关键发现：
+\series default
+ 融资约束的存在（
+\begin_inset Formula $\mu>0$
+\end_inset
+
+）增加了 ESG 投入的边际收益。ESG 不仅直接影响利润，还通过提高融资额度间接增加企业可用资源。
+\end_layout
+
+\begin_layout Section
+可检验命题
+\end_layout
+
+\begin_layout Subsection
+命题 1：融资约束放大 ESG 的正向效应
+\end_layout
+
+\begin_layout Standard
+\series bold
+命题陈述：
+\series default
+ 融资约束强度
+\begin_inset Formula $\kappa$
+\end_inset
+
+越高，ESG 投入对企业盈利能力的正向效应越大。
+\end_layout
+
+\begin_layout Standard
+\series bold
+推导：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\frac{\partial}{\partial\kappa}\left(\frac{\partial\pi}{\partial x_{t}}\right)=\frac{1}{\delta}\cdot\frac{\partial\mu}{\partial\kappa}\cdot\frac{\partial B}{\partial S}>0\label{eq:amplification}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+\series bold
+实证检验：
+\series default
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+ROA_{it}=\alpha+\beta_{1}ESG_{it}+\beta_{2}ESG_{it}\times\kappa_{it}+\gamma X_{it}+\epsilon_{it}\label{eq:test-kappa}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+预期：
+\begin_inset Formula $\beta_{2}>0$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsection
+命题 2：ESG 与企业投资的互补性
+\end_layout
+
+\begin_layout Standard
+\series bold
+命题陈述：
+\series default
+ ESG 投入与生产性投资之间存在互补关系，且这种互补性在融资约束企业中更强。
+\end_layout
+
+\begin_layout Standard
+\series bold
+推导：
+\series default
+ 当融资约束紧时，ESG 投入通过提高
+\begin_inset Formula $B_{t}$
+\end_inset
+
+放松总投入约束，使得企业可以同时增加
+\begin_inset Formula $x_{t}$
+\end_inset
+
+和
+\begin_inset Formula $e_{t}$
+\end_inset
+
+：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\frac{\partial e_{t}^{*}}{\partial S_{t}}=\frac{\partial B_{t}}{\partial S_{t}}-\frac{\partial x_{t}^{*}}{\partial S_{t}}>0\label{eq:complementarity}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Subsection
+命题 3：ESG 的融资约束缓解存在阈值效应
+\end_layout
+
+\begin_layout Standard
+\series bold
+命题陈述：
+\series default
+ ESG 对融资约束的缓解效应存在阈值。当 ESG 水平低于临界值
+\begin_inset Formula $S^{**}$
+\end_inset
+
+时效应较弱，超过后显著增强。
+\end_layout
+
+\begin_layout Standard
+\series bold
+推导：
+\series default
+ 融资额度函数的二阶导数：
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Formula \begin{equation}
+\frac{\partial^{2}B_{t}}{\partial S_{t}^{2}}=\kappa\theta(\theta+1)(1+S_{t})^{-\theta-2}>0\label{eq:threshold}
+\end{equation}
+
+\end_inset
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula $B_{t}$
+\end_inset
+
+关于
+\begin_inset Formula $S_{t}$
+\end_inset
+
+是凸函数，意味着 ESG 的融资缓解效应边际递增。
+\end_layout
+
+\begin_layout Section
+新增假设
+\end_layout
+
+\begin_layout Description
+假设 A1 [融资市场对 ESG 信号敏感]
+ 金融机构能无成本观察企业 ESG 表现并据此调整融资条件。排除"ESG 评级失真"或评级机构方法论差异带来的噪音。
+\end_layout
+
+\begin_layout Description
+假设 A2 [融资约束的形式化]
+ 融资约束以借贷上限
+\begin_inset Formula $B_{t}$
+\end_inset
+
+形式出现，且
+\begin_inset Formula $B_{t}$
+\end_inset
+
+是 ESG 资本的单调递增凸函数。简化处理忽略了更复杂的金融契约设计。
+\end_layout
+
+\begin_layout Description
+假设 A3 [融资成本不直接进入利润函数]
+ 融资约束仅通过限制总投入规模影响利润，而非通过利息支出直接进入利润函数。简化处理避免同时建模融资额度和融资成本。
+\end_layout
+
+\begin_layout Description
+假设 A4 [生产投入和 ESG 投入可替代]
+ 企业可在
+\begin_inset Formula $e_{t}$
+\end_inset
+
+和
+\begin_inset Formula $x_{t}$
+\end_inset
+
+之间自由分配资源，不存在技术互补性约束。
+\end_layout
+
+\begin_layout Description
+假设 A5 [无金融中介代理问题]
+ 金融机构根据 ESG 表现调整融资条件，不存在委托代理问题。假设金融市场定价机制有效。
+\end_layout
+
+\begin_layout Section
+最容易出错的三步
+\end_layout
+
+\begin_layout Enumerate
+\series bold
+混淆融资约束影子价格
+\begin_inset Formula $\mu_{t}$
+\end_inset
+
+与 ESG 影子价格
+\begin_inset Formula $\lambda_{t}$
+\end_inset
+
+。
+\series default
+ 正确关系为
+\begin_inset Formula $\lambda_{t}=1+\mu_{t}$
+\end_inset
+
+（融资约束紧时）。
+\end_layout
+
+\begin_layout Enumerate
+\series bold
+忽略融资约束对 ESG 投入的影响。
+\series default
+ 虽然 ESG 动态方程形式不变，但
+\begin_inset Formula $x_{t}$
+\end_inset
+
+的取值范围受
+\begin_inset Formula $e_{t}+x_{t}\leq B_{t}$
+\end_inset
+
+限制。
+\end_layout
+
+\begin_layout Enumerate
+\series bold
+错误计算融资缓解效应
+\begin_inset Formula $\frac{\partial B_{t}}{\partial S_{t}}$
+\end_inset
+
+。
+\series default
+ 正确计算为
+\begin_inset Formula $\frac{\partial B_{t}}{\partial S_{t}}=\phi+\kappa\theta(1+S_{t})^{-\theta-1}>0$
+\end_inset
+
+。
+\end_layout
+
+\end_body
+\end_document
