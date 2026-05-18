@@ -1,6 +1,4 @@
-# 智能体与社会科学研究
-
-# AI Agent for Social Science Research
+# 智能体框架赋能《经济学科研论文写作》全链条训练——新文科数智教学实践
 
 [English](./README_en.md)
 
@@ -19,14 +17,15 @@
 
 > 案例教学视频持续更新中
 
-| 内容                 | 链接                                                      |
-| -------------------- | --------------------------------------------------------- |
-| 智能体简介           | [BV1VLoCBHE4A](https://www.bilibili.com/video/BV1VLoCBHE4A/) |
-| 安装配置             | [BV11aoCBzEqJ](https://www.bilibili.com/video/BV11aoCBzEqJ/) |
-| 案例 1：初版理论模型 | [BV11aoCBzECc](https://www.bilibili.com/video/BV11aoCBzECc)  |
-| 案例 2：理论拓展     | [BV1yz9SB7E9Z](https://www.bilibili.com/video/BV1yz9SB7E9Z/) |
-| 案例 3：财务数据下载 | [BV14aRhBPEF7](https://www.bilibili.com/video/BV14aRhBPEF7/) |
-| 案例 4：ESG 面板构建 | [BV1xaRhBPEkY](https://www.bilibili.com/video/BV1xaRhBPEkY/) |
+| 内容                           | 链接                                                      |
+| ------------------------------ | --------------------------------------------------------- |
+| 智能体简介                     | [BV1VLoCBHE4A](https://www.bilibili.com/video/BV1VLoCBHE4A/) |
+| 安装配置                       | [BV11aoCBzEqJ](https://www.bilibili.com/video/BV11aoCBzEqJ/) |
+| 案例 1：初版理论模型           | [BV11aoCBzECc](https://www.bilibili.com/video/BV11aoCBzECc)  |
+| 案例 2：理论拓展               | [BV1yz9SB7E9Z](https://www.bilibili.com/video/BV1yz9SB7E9Z/) |
+| 案例 3：财务数据下载           | [BV14aRhBPEF7](https://www.bilibili.com/video/BV14aRhBPEF7/) |
+| 案例 4：ESG 面板构建           | [BV1xaRhBPEkY](https://www.bilibili.com/video/BV1xaRhBPEkY/) |
+| 案例 5：大数据与本地数据库构建 | [BV1kvLp6rEua](https://www.bilibili.com/video/BV1kvLp6rEua/) |
 
 ---
 

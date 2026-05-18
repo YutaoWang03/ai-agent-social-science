@@ -1,4 +1,4 @@
-# AI Agent for Social Science Research
+# AI Agent Empowering Full-Chain Training for "Economics Research Paper Writing" — Digital-Intelligence Teaching Practice for New Liberal Arts
 
 [中文](./README.md)
 
